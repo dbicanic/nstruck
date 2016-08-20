@@ -2,11 +2,17 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Nstruck
+    %title Northshore Truck & Equipment
+    %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
     = yield
-    #wrapper
+  #wrapper
     = render 'navbar'
+    #page-content-wrapper
+      %a#menu-toggle.btn.btn-default{:href => "#menu-toggle"}
+        %span.glyphicon.glyphicon-menu-hamburger{"aria-hidden" => "true"}
+
