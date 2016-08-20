@@ -4,6 +4,27 @@
 
 $navbarResting  : #CC0000;
 
-.navbar-default {
+.btn {
+	width: 30px;
+}
+
+.footer {
+	background-color: black;
+	color: white;	
+}
+
+.header {
 	background-color: $navbarResting;
+	margin-top: 0;
+	padding: 10px;
+	color: white;
+	padding-bottom: 50px;
+}
+
+#header-title {
+	margin-top: 0;
+}
+
+#page-content-wrapper {
+	padding: 0;
 }
