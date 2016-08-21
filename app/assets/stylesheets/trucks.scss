@@ -1,0 +1,41 @@
+// Place all the styles related to the trucks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbarResting  : #CC0000;
+
+
+.btn {
+	width: 30px;
+}
+
+.footer {
+	background-color: black;
+	color: white;	
+	padding: 15px;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+}
+
+.hamBtn {
+	margin-left: 0;
+}
+
+#header {
+	background-color: $navbarResting;
+	margin-top: 0;
+	padding: 10px;
+	color: white;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#header-title {
+	margin-top: 0;
+}
+
+#page-content-wrapper {
+	padding: 0;
+}

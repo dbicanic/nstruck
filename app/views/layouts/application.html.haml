@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Northshore Truck & Equipment
+    %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  #wrapper
+    = render 'navbar'
+    #page-content-wrapper
+      #header
+        %h1.col-sm-12#header-title Northshore Truck & Equipment
+      %a#menu-toggle.btn.btn-default.btn-sm{:href => "#menu-toggle"}
+        %span.glyphicon.glyphicon-menu-hamburger{"aria-hidden" => "true"}
+      %body
+        = yield
+      .footer.col-sm-12
+        .container-fluid
+          .address Northshore Truck & Equipment Co., Inc * 29900 N.Skokie Hwy., Unit B * Lake Bluff, IL 60044
+          .phone-fax Phone (847) 887-0200 * Fax (847) 887-0229
