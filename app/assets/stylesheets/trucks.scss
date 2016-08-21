@@ -4,6 +4,7 @@
 
 $navbarResting  : #CC0000;
 
+
 .btn {
 	width: 30px;
 }
@@ -11,14 +12,24 @@ $navbarResting  : #CC0000;
 .footer {
 	background-color: black;
 	color: white;	
+	padding: 15px;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
 }
 
-.header {
+.hamBtn {
+	margin-left: 0;
+}
+
+#header {
 	background-color: $navbarResting;
 	margin-top: 0;
 	padding: 10px;
 	color: white;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
 #header-title {

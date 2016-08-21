@@ -44,6 +44,10 @@ $sideBarSel: #FF0000;
     padding: 15px;
 }
 
+#page-content-wrapper #footer {
+    text-align: center;
+}
+
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
