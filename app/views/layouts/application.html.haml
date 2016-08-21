@@ -15,8 +15,9 @@
         %h1.col-sm-12#header-title Northshore Truck & Equipment
       %a#menu-toggle.btn.btn-default.btn-sm{:href => "#menu-toggle"}
         %span.glyphicon.glyphicon-menu-hamburger{"aria-hidden" => "true"}
-    %body
-      = yield
-    .footer.col-sm-12
-      .address Northshore Truck & Equipment Co., Inc * 29900 N.Skokie Hwy., Unit B * Lake Bluff, IL 60044
-      .phone-fax Phone (847) 887-0200 * Fax (847) 887-0229
+      %body
+        = yield
+      .footer.col-sm-12
+        .container-fluid
+          .address Northshore Truck & Equipment Co., Inc * 29900 N.Skokie Hwy., Unit B * Lake Bluff, IL 60044
+          .phone-fax Phone (847) 887-0200 * Fax (847) 887-0229
