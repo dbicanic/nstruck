@@ -1,6 +1,23 @@
 Rails.application.routes.draw do
 
   root 'trucks#index'
+
+  get '/replacementbodies'  => 'trucks#replacementbodies'
+  get '/about'              => 'trucks#about'
+  get '/dumpbodies'         => 'trucks#dumpbodies'
+  get '/chipperbodies'      => 'trucks#chipperbodies'
+  get '/loaders'            => 'trucks#loaders'
+  get '/flatbeds'           => 'trucks#flatbeds'
+  get '/custombodies'       => 'trucks#custombodies'
+  get '/specialtytrailers'  => 'trucks#sptrailers'
+  get '/RCtrailers'         => 'trucks#RCtrailers'
+  get '/dumperdogg'         => 'trucks#dumperdogg'
+  get '/services'           => 'trucks#services'
+  get '/products_links'     => 'trucks#products_links'
+  get '/gallery'            => 'trucks#gallery'
+  get '/forsale'            => 'trucks#forsale'
+  get '/contact'            => 'trucks#contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
