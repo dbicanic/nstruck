@@ -3,7 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $navbarResting  : #CC0000;
-
+$eczar: 'Eczar', serif;
+$lalezar: 'Lalezar', cursive;
+$fugaz: 'Fugaz One', cursive;
+$contrail: 'Contrail One', cursive;
 
 .btn {
 	width: 30px;
@@ -34,6 +37,7 @@ $navbarResting  : #CC0000;
 
 #header-title {
 	margin-top: 0;
+	font-family: $contrail;
 }
 
 #page-content-wrapper {
