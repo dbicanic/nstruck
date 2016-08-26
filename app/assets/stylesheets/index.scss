@@ -1,3 +1,5 @@
+//index page
+
 .index-container {
 	text-align: center;
 }
@@ -9,3 +11,16 @@
 .about {
 	padding: 20px;
 }
+
+//dumptruck page
+
+#myCarousel {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 400px;
+}
+
