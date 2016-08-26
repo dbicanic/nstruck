@@ -1,3 +1,10 @@
+.title-pages {
+	color: #666666;
+	padding: 25px;
+}
+
+//index page
+
 .index-container {
 	text-align: center;
 }
@@ -8,4 +15,35 @@
 
 .about {
 	padding: 20px;
+}
+
+//dumptruck page
+
+#myCarousel {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 400px;
+}
+
+.talk {
+	text-align: center;
+	padding: 15px;
+	font-size: 120%;
+}
+
+.talkTop {
+	text-align: center;
+	padding: 15px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 150%;	
+}
+
+.phoneBottom {
+	text-align: center;
+	padding: 15px;
 }

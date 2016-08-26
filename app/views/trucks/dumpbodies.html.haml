@@ -1,1 +1,29 @@
-dumpbodies.html.haml
+%h1.title-pages Dump Bodies
+%p.talkTop Our heavy-duty dump bodies will provide you with years of service.
+#myCarousel.carousel.slide{"data-ride" => "carousel"}
+	%ol.carousel-indicators
+		%li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+		%li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+	.carousel-inner{"role" => "listbox"}
+		.item.dump.active
+			=image_tag "dump1.jpg"
+		.item.dump
+			=image_tag "dump2.jpg"
+		.item.dump
+			=image_tag "dump3.jpg"
+		.item.dump
+			=image_tag "dump4.jpg"
+		.item.dump
+			=image_tag "dump5.jpg"
+	%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
+		%span.glyphicon.glphicon-chevron-left{"aria-hidden" => "true"}
+		%span.sr-only Previous
+	%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
+		%span.glyphicon.glphicon-chevron-right{"aria-hidden" => "true"}
+		%span.sr-only Next
+%p.talk These are just a few standard examples.  Call us for your custom dump body quotation.  We'll help you design a body for your application.
+
+%h4.phoneBottom (847) 887-0200
