@@ -1,1 +1,29 @@
-dummperdogg.html.haml
+.container-fluid
+	%h1.title-pages Dumper Dogg Inserts
+	%p.talkTop An economical alternative to buying a new truck.	
+	%p.talkTop Convert your existing pick up to a dump truck with a Dumper Dogg insert from Buyers Products.
+	%p.list-pages Available in steel, stainless steel, or poly.
+	%p.list-pages Options include:
+	%ul.list-pages
+		%li Extended Sides
+		%li	Tarp Kit
+		%li Cab Guard
+	%p.talkTop For additional info, please visit <a href="http://www.dumperdogg.com">Dumper Dogg.</a>
+	#myCarousel.carousel.slide{"data-ride" => "carousel"}
+		%ol.carousel-indicators
+			%li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+			%li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+		.carousel-inner{"role" => "listbox"}
+			.item.dump.active
+				=image_tag "DumperDogg1.jpg"
+			.item.dump
+				=image_tag "DumperDogg2.jpg"
+		%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
+			%span.glyphicon.glphicon-chevron-left{"aria-hidden" => "true"}
+			%span.sr-only Previous
+		%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
+			%span.glyphicon.glphicon-chevron-right{"aria-hidden" => "true"}
+			%span.sr-only Next
+	.directCap.col-lg-3	
+		%script{:src => "https://widget.directcapital.com/btnjs?encryptedPartnershipId=EAAAAHe1HxFbUkon5Jxe2vjNyysHfklOE6EVieAdyneaVbua5SHgDIvwbmkt5VqtBlnBu%2BWsha%2BQSicS0BUHpHsX36o%3D&buttonType=standard", :type => "text/javascript"}
+	=link_to image_tag("SheffieldFinancial.gif"), "https://sheffieldfinancial.com/", {class: "col-lg-3"}
