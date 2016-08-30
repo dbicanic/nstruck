@@ -1,0 +1,45 @@
+(function(d, w) {
+
+    var cssId = "dcc-widget-css";
+    if (!d.getElementById(cssId))
+    {
+        var head = d.getElementsByTagName("head")[0];
+        var link = d.createElement("link");
+        link.id = cssId;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "https://widget.directcapital.com/Content/widget.less";
+        link.media = "all";
+        head.appendChild(link);
+    }
+
+    var button = d.createElement("button");
+    button.className = "dcc-widget-btn dcc-widget-btn-standard";
+    button.onclick = function () {
+        var newWindow = w.open("https://northshoretruckequipment.directcapital.com/", "_blank");
+        newWindow.focus();
+    };
+
+    var script = null;
+    var partnershipIdRegex = new RegExp("[\\?&]encryptedpartnershipid=([^&#]*)");
+    var buttonTypeRegex = new RegExp("[\\?&]buttontype=([^&#]*)");
+    var scripts = d.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+        var src = scripts[i].src.toLowerCase();
+        var partnershipIdResults = partnershipIdRegex.exec(src);
+        var buttonTypeResults = buttonTypeRegex.exec(src);
+        if (!scripts[i].processed && scripts[i].parentNode.tagName != "HEAD" && partnershipIdResults && buttonTypeResults) {
+            var partnershipId = decodeURIComponent(partnershipIdResults[1].replace(/\+/g, " "));
+            var buttonType = decodeURIComponent(buttonTypeResults[1].replace(/\+/g, " "));
+            if (partnershipId === "eaaaahe1hxfbukon5jxe2vjnyyshfkloe6evieadyneavbua5shgdivwbmkt5vqtblnbu+wsha+qsics0buhphsx36o=" && buttonType === "standard") {
+                script = scripts[i];
+                script.processed = true;
+                break;
+            }
+        }
+    }
+
+    if (script)
+        script.parentNode.insertBefore(button, script);
+
+})(document, window);
