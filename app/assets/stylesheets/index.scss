@@ -67,3 +67,20 @@ li {
 .directCap {
 	padding: 20px;
 }
+
+//products
+
+.products {
+	padding: 10px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.products img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
